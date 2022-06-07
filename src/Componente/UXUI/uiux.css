@@ -1,0 +1,66 @@
+.Uiux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .Uiuxtxt{
+    padding-top: 1em;
+    font-size: 2.5em;
+    font-weight: 200em;
+    flex: 1;
+  }
+  .Uiuxtitle {
+    flex: 3;
+    position:absolute;
+    height: 13.125em;
+    width: 8.75em;
+    perspective: 62.5em;
+    background: none;
+  }
+  .Uiuxt_img {
+    height: 18.85em;
+    width: 28.55em;
+    image-resolution: revert;
+
+  }
+  .Uiuxt_grid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 10s infinite linear;
+    background: none;
+  }
+  .Uiuxt_grid:hover {
+    animation-play-state: paused;
+  }
+  .Uiuxt_grid figure {
+    display: block;
+    position: absolute;
+  }
+  .Uiuxt_grid figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(15em);
+  }
+  .Uiuxt_grid figure:nth-child(2) {
+    transform: rotateY(120deg) translateZ(15em);
+  }
+  .Uiuxt_grid figure:nth-child(3) {
+    transform: rotateY(240deg) translateZ(15em);
+  }
+  .Uiuxt_grid img {
+    transform: scale(1, 1);
+  }
+  .Uiuxt_grid img:hover {
+    transform: scale(1, 1);
+  }
+  @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  

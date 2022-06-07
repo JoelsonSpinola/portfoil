@@ -1,0 +1,85 @@
+.Photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.phototxt{
+  padding-top: 1em;
+  font-size: 2.5em;
+  font-weight: 200em;
+  flex: 1;
+}
+.phototitle {
+  flex: 3;
+  position:absolute;
+  height: 13.125em;
+  width: 8.75em;
+  perspective: 62.5em;
+  background: none;
+}
+.photo_img {
+  height: 20em;
+  width: 15em;
+}
+.photogrid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 10s infinite linear;
+  background: none;
+}
+.photogrid:hover {
+  animation-play-state: paused;
+}
+.photogrid figure {
+  display: block;
+  position: absolute;
+}
+.photogrid figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(25em);
+}
+.photogrid figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(25em);
+}
+.photogrid figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(25em);
+}
+.photogrid figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(25em);
+}
+.photogrid figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(25em);
+}
+.photogrid figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(25em);
+}
+.photogrid figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(25em);
+}
+.photogrid figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(25em);
+}
+.photogrid figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(25em);
+}
+.photogrid figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(25em);
+}
+
+.photogrid img {
+  transform: scale(1, 1);
+}
+.photogrid img:hover {
+  transform: scale(1, 1);
+}
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
